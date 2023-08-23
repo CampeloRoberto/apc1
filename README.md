@@ -1,4 +1,4 @@
-#Algoritmos e ?Programação de computadores
+#Algoritmos e Programação de computadores
 
 Repositório criado para submeter os codigos implementados na disciplina;
 
