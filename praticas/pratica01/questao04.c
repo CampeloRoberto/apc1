@@ -11,20 +11,33 @@
 int main()
 {
 
+  
+  
 const float ICMS = 0.17;
 const float COFINS = 0.076;
 const float PIS_PASEP = 0.0165;
 
   float preco;
+  float Valor_ICMS;
+  float Valor_COFINS;
+  float Valor_PIS_PASEP;
   
-
  printf ("digite o preço do produto:  ");
   scanf("%f",&preco);
-
+  
+Valor_ICMS = ICMS*preco;
+  printf ("\n O valor do ICMS é  %.2f",Valor_ICMS);
+  
+Valor_COFINS = COFINS*preco;
+  printf ("\n O valor do COFINS é  %.2f",Valor_COFINS);
+  
+Valor_PIS_PASEP = PIS_PASEP*preco;
+  printf ("\n O valor do PIS/PASEP é  %.2f",Valor_PIS_PASEP);
+  
   
   preco = 1 *preco + ICMS*preco + COFINS*preco + PIS_PASEP*preco;
 
-  printf ("valor do produto mais impostos é: %f ",preco);
+  printf ("\n O valor do produto mais impostos é: %.2f ",preco);
 
 
   return 0;
