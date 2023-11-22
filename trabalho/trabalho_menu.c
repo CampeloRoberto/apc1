@@ -74,32 +74,74 @@ char opcao  = 0;
 
             getchar();
             deu_certo = system("clear");
-           /* printf("\n");
-            printf("\n");
+           printf("\n");
             printf("\n");
 
-            printf("                        3                         "); // ----------------------- ta bugando..nao sei o que fazer
-            sleep (1);
+            printf("                  .-=**#####*+-.                   \n");
+            printf("                .+@@@@@@@@@@@@@@@@+.                \n");
+            printf("               *@@@@@@@@@@@@@@@@@@@@*               \n");
+            printf("             .@@@@@@@*-.    .-#@@@@@@@              \n");
+            printf("             .@@@@@*.          *@@@@@@-             \n");
+            printf("               .:-=.           =@@@@@@-             \n");
+            printf("                              .@@@@@@@              \n");
+            printf("                      :::::-+#@@@@@@#.              \n");
+            printf("                     -@@@@@@@@@@@@*:                \n");
+            printf("                     -@@@@@@@@@@@@*=                \n");
+            printf("                     .=+=+++*#@@@@@@@+              \n");
+            printf("                              .*@@@@@@#             \n");
+            printf("                                #@@@@@@:            \n");
+            printf("            =+*#@@#             +@@@@@@-            \n");
+            printf("            +@@@@@@#.          -@@@@@@@.            \n");
+            printf("             =@@@@@@@#+-::::-+#@@@@@@@-             \n");
+            printf("              .*@@@@@@@@@@@@@@@@@@@@*.              \n");
+            printf("                .=*@@@@@@@@@@@@@@#=.                \n");
+            sleep (1.4);
+            int deu_certo = system("clear");
+            usleep(500000);
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("                     .+@@@@@@@@#-                  \n");
+            printf("                    -@@@@@#*#@@@@@.                \n");
+            printf("                    @@@@+    .#@@@#                \n");
+            printf("                   :@@@@      *@@@@                \n");
+            printf("                             :@@@@#                \n");
+            printf("                           -#@@@@*                 \n");
+            printf("                        :+@@@@@*:                  \n");
+            printf("                      -#@@@@#=                     \n");
+            printf("                    .@@@@@=.                       \n");
+            printf("                    @@@@@@#########                \n");
+            printf("                   #@@@@@@@@@@@@@@@                \n");
+
+            sleep (1.4);
+            deu_certo = system("clear"); //pq nao ta limpando criatura?
+            usleep(500000);
             deu_certo = system("clear");
+
             printf("\n");
             printf("\n");
             printf("\n");
             printf("\n");
             printf("\n");
-            printf("                        2                         ");
-            sleep (1);
+            printf("                        +@@@+                         \n");
+            printf("                   .:-+@@@@@=                         \n");
+            printf("                   #@@@@@@@@=                         \n");
+            printf("                   =++*@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            printf("                      .@@@@@=                         \n");
+            sleep (1.4);
+
             deu_certo = system("clear");
-            printf("\n");
-            printf("\n");
-            printf("\n");
-            printf("\n");
-            printf("\n");
-            printf("                        1                         ");
-            sleep (1);
-            deu_certo = system("clear"); // ta bugado, fica aparecendo de novo a ultima coisa que eu fiz :///
-
-            sleep (1);*/
-
 
 
 
