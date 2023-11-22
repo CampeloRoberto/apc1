@@ -5,6 +5,7 @@
 -canonical mode? disable echo? tcgetattr ?
 - arrumar a contagem;
 -arrumar o print final;
+- usar comando default pro usuario nao avacalhar!!!
 
 */
 
@@ -272,11 +273,17 @@ char opcao  = 0;
     }
 
     if (!quit) {
-      // Show game over
-      printf("\e[%iB\e[%iC Game Over!  ", linhas / 2, colunas/ 2 - 5);
+      // Mostrar game over   
+      deu_certo = system("clear"); // colocar um outro switch
+      printf("\n");
+      printf(" \n      Game Over!       ");
+      printf(" \n    SCORE = %i         ",score);
+      printf(" \n     Para sair aperte '0' duas vezes      ");
+      printf(" \n     recomeçar tecle qualquer outra tecla       ");
+      /*printf("\e[%iB\e[%iC Game Over!  ", linhas / 2, colunas/ 2 - 5);
       printf("\e[%iB\e[%iC SCORE = %i ",linhas/2 -20, colunas/2 -5 , score);
       printf (" \e[%iB\e[%iC Para sair aperte '0' duas vezes\n", linhas/2 - 15, colunas- 200);
-      printf (" \e[%iB\e[%iC Para recomeçar tecle qualquer outra tecla", linhas/2 - 16, colunas-10); //esse trem n me obedece cara...---
+      printf (" \e[%iB\e[%iC Para recomeçar tecle qualquer outra tecla", linhas/2 - 16, colunas-10); //esse trem n me obedece cara...--- */
 
       printf("\e[%iF", linhas / 2);
       fflush(stdout);
