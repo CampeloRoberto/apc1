@@ -273,17 +273,38 @@ char opcao  = 0; // por isso que o enter vai;
     }
 
     if (!quit) {
-      // Mostrar game over   
+      // Mostrar game over
       deu_certo = system("clear"); // colocar um outro switch
       printf("\n");
-      printf(" \n      Game Over!       ");
-      printf(" \n    SCORE = %i         ",score);
-      printf(" \n     Para sair aperte '0' duas vezes      ");
-      printf(" \n     recomeçar tecle qualquer outra tecla       ");
+      //printf(" \n      Game Over!       ");
+      printf("\n");
+      printf("\n");
+      printf("       ::=@@==========-      ::+@@==+@@=::      #@@@@-:.   ::+@@@@*   @@@@@=============-      \n");
+      printf("    .::@@+=:              .:-@@+=-   ==+@@::.   #@@@@@@*:::*@@@@@@+   @@@@@                    \n");
+      printf("    #@@@@.       .. ..    #@@@@        .@@@@+   #@@@@@@@@@@@@@@@@@*   @@@@@.. .. .. .          \n");
+      printf("    #@@@@      ***@@@@#   #@@@@.       :@@@@+   #@@@@***@@#**#@@@@*   @@@@@**********=         \n");
+      printf("    +*#@@.        @@@@#   #@@@@********#@@@@+   #@@@@   =*:  -@@@@*   @@@@@                    \n");
+      printf("     b ##@@*      @@@@*   #@@@@        .@@@@+   #@@@@        -@@@@+   @@@@@                    \n");
+      printf("         .############*   +##@@         @@@#=   *@@@*        :@@@@=   @@@@@#############+      \n");
+      printf("\n");
+      printf("\n");
+      printf("       @@#########@#      #@@@@         @@@@+   #@@@@*************-   @@@@@#########@*         \n");
+      printf("    #@@@@:        @@@@*   #@@@@         @@@@+   @@@@@                 @@@@@        =@@@@*      \n");
+      printf("    #@@@@:        @@@@*   #@@@@         @@@@+   @@@@@                 @@@@@        =@@@@*      \n");
+      printf("    #@@@@:        @@@@#   *@@@@@@+   +#@@@@+=   #@@@@#**********      @@@@@     .@@@@@@@*      \n");
+      printf("    #@@@@:        @@@@#     .@@@@@###@@@@@      #@@@@                 @@@@@#####@@@            \n");
+      printf("    #@@@@:        @@@@#        =@@@@@@@-        #@@@@                 @@@@@   @@@@@#*=         \n");
+      printf("    ...*@#@@@@@@@@@*..          ..*@*..         #@@@@+++++++++++++-   @@@@@   ..:@@@@#++=      \n");
+      printf("\n");
+      printf("\n");
+
+      printf(" \n                                         SCORE = %i         ",score);
+      printf(" \n                                   Para sair aperte '0'      ");
+      printf(" \n                       Para recomeçar tecle qualquer outra tecla       ");
 
       // colocar um comando switch (sair, remomeçar) como novas opções
       // colocar um ranking de melhor pontuaçao;
-      
+
 
       printf("\e[%iF", linhas / 2);
       fflush(stdout);
@@ -291,6 +312,7 @@ char opcao  = 0; // por isso que o enter vai;
     int ch = getchar(); // nao queria que fosse de dois fatores
        if ( ch == '0' ) { // 27 = Esc
           quit = 1;
+          break;
           }else{
              //getchar();
       int deu_certo = system ("clear");
