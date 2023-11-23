@@ -71,7 +71,7 @@ char opcao  = 0; // por isso que o enter vai;
             printf("\n");
             printf("\n");
             printf("\n");
-            printf("           APERTE ENTER PARA COMEÇAR!!!       \n"); 
+            printf("           APERTE ENTER PARA COMEÇAR!!!       \n");
 
             getchar();
             deu_certo = system("clear");
@@ -204,7 +204,7 @@ char opcao  = 0; // por isso que o enter vai;
           printf("\e[%iB\e[%iC\e[0;31m▓\e[0m", comiday + 1 , comidax + 1); //mudando para vermelho e o simbolo para quadrado!! +1 pra n aparecer comida na borda
           printf("\e[%iF", comiday + 1); /*\e[%iB  e \e[%iC são prints posicionais, sendo C posição coluna, B posição da linha e
            \e[%iF retira as informações do console nao sai o local do arquivo no final*/
-          score = score + 1; // aqui definimos quantas comidas a cobra comeu!   
+          score = score + 1; // aqui definimos quantas comidas a cobra comeu!
         }
       }
 
@@ -299,7 +299,7 @@ char opcao  = 0; // por isso que o enter vai;
       printf("\n");
 
       printf(" \n                                         SCORE = %i         ",score);
-      printf(" \n                                   Para sair aperte '0'      ");
+      printf(" \n                                   Para sair aperte '0'       ");
       printf(" \n                       Para recomeçar tecle qualquer outra tecla       ");
 
       // colocar um comando switch (sair, remomeçar) como novas opções
@@ -313,9 +313,11 @@ char opcao  = 0; // por isso que o enter vai;
        if ( ch == '0' ) { // 27 = Esc
           quit = 1;
           break;
+
           }else{
-             //getchar();
+
       int deu_certo = system ("clear");
+
 
       printf("\n");
       printf("\n");
@@ -335,7 +337,14 @@ char opcao  = 0; // por isso que o enter vai;
 
             break;
 
+            case '0':
+            break;
 
+            default: printf("\e[0;31mOpção inválida!\e[0m\n");
+            printf("Pressione ENTER para continuar\n");
+            getchar();
+            break;
+          //aqui se encerra o nosso switch
           }
 
 
