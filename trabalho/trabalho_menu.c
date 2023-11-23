@@ -1,10 +1,10 @@
 /*   PENDENCIAS
-- ambições = menu/ score/ nao abrir o jogo na hora q da enter/ mudar dificuldade
+- ambições = menu/ mudar dificuldade
 - selecionar dificuldade no menu (alterar tamanho da arena), mas como mudar se sao constantes ??
 - strutc timeval, tv, STDIN_FILENO
 -canonical mode? disable echo? tcgetattr ?
-- arrumar a contagem;
--arrumar o print final;
+
+
 - usar comando default pro usuario nao avacalhar!!!
 
 */
@@ -21,7 +21,7 @@ int main() {
   // PRIMEIRO PASSO: TIRAR O CURSOR ( se nao nao teremos como apertar os controles dos jogos)
   printf("\e[?25l");
 
-char opcao  = 0;
+char opcao  = 0; // por isso que o enter vai;
 
   while (opcao != '0')
     {
@@ -41,7 +41,7 @@ char opcao  = 0;
       printf("\n");
       printf("                                                 0 - SAIR\n " );
       printf("\n");
-      printf( "Aperte apenas p número da opção desejada => ");
+      printf( "Aperte apenas o número da opção desejada => ");
 
       deu_certo =scanf(" %c", &opcao);
       while (getchar ()!= '\n');
@@ -71,7 +71,7 @@ char opcao  = 0;
             printf("\n");
             printf("\n");
             printf("\n");
-            printf("           APERTE ENTER PARA COMEÇAR!!!       \n"); //como fazer um 3... 2... 1... já!! trabalho demais?
+            printf("           APERTE ENTER PARA COMEÇAR!!!       \n"); 
 
             getchar();
             deu_certo = system("clear");
@@ -204,7 +204,7 @@ char opcao  = 0;
           printf("\e[%iB\e[%iC\e[0;31m▓\e[0m", comiday + 1 , comidax + 1); //mudando para vermelho e o simbolo para quadrado!! +1 pra n aparecer comida na borda
           printf("\e[%iF", comiday + 1); /*\e[%iB  e \e[%iC são prints posicionais, sendo C posição coluna, B posição da linha e
            \e[%iF retira as informações do console nao sai o local do arquivo no final*/
-          score = score + 1; // aqui definimos quantas comidas a cobra comeu!   ❤
+          score = score + 1; // aqui definimos quantas comidas a cobra comeu!   
         }
       }
 
@@ -236,7 +236,7 @@ char opcao  = 0;
 
 
       // printando a cabeça da cobra
-      printf("\e[%iB\e[%iC\e[0;32m▓\e[0m", y[cabeca] + 1, x[cabeca] + 1); // mudei para verde ▓
+      printf("\e[%iB\e[%iC\e[0;32m▓\e[0m", y[cabeca] + 1, x[cabeca] + 1); // foi para a cor para verde ▓
       printf("\e[%iF", y[cabeca] + 1);
 
       fflush(stdout); // ver o cursor frame a frame de acordo com a velocidade do usleep
@@ -280,10 +280,10 @@ char opcao  = 0;
       printf(" \n    SCORE = %i         ",score);
       printf(" \n     Para sair aperte '0' duas vezes      ");
       printf(" \n     recomeçar tecle qualquer outra tecla       ");
-      /*printf("\e[%iB\e[%iC Game Over!  ", linhas / 2, colunas/ 2 - 5);
-      printf("\e[%iB\e[%iC SCORE = %i ",linhas/2 -20, colunas/2 -5 , score);
-      printf (" \e[%iB\e[%iC Para sair aperte '0' duas vezes\n", linhas/2 - 15, colunas- 200);
-      printf (" \e[%iB\e[%iC Para recomeçar tecle qualquer outra tecla", linhas/2 - 16, colunas-10); //esse trem n me obedece cara...--- */
+
+      // colocar um comando switch (sair, remomeçar) como novas opções
+      // colocar um ranking de melhor pontuaçao;
+      
 
       printf("\e[%iF", linhas / 2);
       fflush(stdout);
